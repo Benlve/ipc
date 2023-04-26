@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/aidl_get_binder"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="获取服务端binder" />
+
+    <Button
+        android:id="@+id/aidl_send_basic_type"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="发送基本数据类型" />
+
+    <Button
+        android:id="@+id/aidl_send_parcel_type"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="发送对象数据类型" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_margin="10dp"
+        android:background="#B9FFE1E1">
+
+        <TextView
+            android:id="@+id/data_send"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="10dp"
+            android:gravity="center"
+            android:hint="发送的数据" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_margin="10dp"
+        android:background="#B9FFE1E1">
+
+        <TextView
+            android:id="@+id/data_callback"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="10dp"
+            android:gravity="center"
+            android:hint="Binder返回的数据" />
+    </LinearLayout>
+
+
+</LinearLayout>
